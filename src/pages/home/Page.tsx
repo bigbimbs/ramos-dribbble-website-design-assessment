@@ -1,9 +1,10 @@
-import { HomePageLayout } from "./components";
+import { HeroSection, HomePageLayout, SectionTwo } from "./components";
 
 export const HomePage = () => {
   return (
     <HomePageLayout>
-      <h1>Hello</h1>
+      <HeroSection />
+      <SectionTwo />
     </HomePageLayout>
   );
 };
