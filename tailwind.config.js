@@ -4,6 +4,7 @@ export default {
   theme: {
     extend: {
       wordSpacing: {
+        thinner: "-40px",
         thin: "-0.40em",
         wide: "0.25em",
         wider: "0.5em",

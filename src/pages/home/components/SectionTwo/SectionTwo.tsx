@@ -1,10 +1,9 @@
-import { Section } from "@/components/Elements";
-import { FastEasy } from "./SectionTwo/FastEasy";
-import { WidgetControl } from "./SectionTwo/WidgetControl";
+import { FastEasy } from "./FastEasy";
+import { WidgetControl } from "./WidgetControl";
 
 export const SectionTwo = () => {
   return (
-    <Section className="bg-[#F9F9F9] rounded-[80px] py-[80px] mx-1 px-[80px]">
+    <div className="bg-[#F9F9F9] rounded-[80px] py-[80px] mx-1 px-[80px]">
       <div className="flex justify-between items-center mb-10">
         <h3 className="text-[32px] word-spacing-thin max-w-[500px]">
           Your key to strategic success through analytics
@@ -31,6 +30,6 @@ export const SectionTwo = () => {
         </p>
       </div>
       <></>
-    </Section>
+    </div>
   );
 };

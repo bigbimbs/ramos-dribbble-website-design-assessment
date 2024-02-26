@@ -7,8 +7,12 @@ export const HeroSection = () => {
         <div className="col-span-2">
           <div className="pl-32">
             <div className="flex items-start justify-end w-full">
-              <div className="w-20 h-20 bg-[#F2F2F2] rounded-full"></div>
-              <div className="w-20 h-20 bg-[#FE4A23] rounded-full -ml-4"></div>
+              <div className="w-20 h-20 bg-[#F2F2F2] rounded-full flex justify-center items-center">
+                <img src="/icons/hero-icon-1.png" className="h-8" />
+              </div>
+              <div className="w-20 h-20 bg-[#FE4A23] rounded-full -ml-4 flex justify-center items-center">
+                <img src="/icons/hero-icon-2.png" className="w-8" />
+              </div>
               <h2 className="text-[80px] p-0 mt-[-16px] ml-5">Analytics</h2>
             </div>
             <h2 className="text-[80px] p-0 mt-[-20px] word-spacing-thin">
@@ -18,7 +22,9 @@ export const HeroSection = () => {
         </div>
         <div className="col-span-1">
           <div className="h-[180px] w-full bg-[#F2F3F5] rounded-xl relative">
-            <div className="h-10 w-10 rounded-full bg-[#FE4A23] absolute top-[-16px] left-[-16px]"></div>
+            <div className="h-10 w-10 rounded-full bg-[#FE4A23] absolute top-[-16px] left-[-16px] flex justify-center items-center">
+              <img src="/icons/hero-icon-3.png" className="h-3" />
+            </div>
           </div>
         </div>
       </div>
