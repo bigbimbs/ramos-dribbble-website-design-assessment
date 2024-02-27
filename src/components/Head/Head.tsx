@@ -1,5 +1,4 @@
 import { memo } from "react";
-import { Helmet } from "react-helmet-async";
 
 type HeadProps = Partial<{
   title?: string;
@@ -8,12 +7,10 @@ type HeadProps = Partial<{
 
 const HeadComponent = ({ title = "", description = "" }: HeadProps = {}) => {
   return (
-    // <Helmet
-    //   title={title ? `${title} | Afrinvest` : undefined}
-    //   defaultTitle="Afrinvest"
-    // >
-    <meta name="description" content={description} />
-    // </Helmet>
+    <>
+      <title>{title}</title>
+      <meta name="description" content={description} />
+    </>
   );
 };
 
