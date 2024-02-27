@@ -1,6 +1,13 @@
+import { NumberCount } from "@/components/Elements/NumberCount/NumberCount";
+import { useCustomAnimation } from "@/hooks";
+
 export const FastEasy = () => {
+  const { isInView, ref } = useCustomAnimation();
   return (
-    <div className="col-span-3 shadow-xl border rounded-2xl pl-10 pt-10 grid grid-cols-2 bg-white">
+    <div
+      ref={ref}
+      className="col-span-3 shadow-xl border rounded-2xl pl-10 pt-10 grid grid-cols-2 bg-white"
+    >
       <div className="col-span-1 flex flex-col justify-between pb-4">
         <div className="text-black rounded-lg bg-[#FFD027] p-2 max-w-fit text-[10px] shadow-lg">
           Setting up reports
@@ -38,7 +45,19 @@ export const FastEasy = () => {
               <div className="bg-[#6ED19C] h-1 w-[30px] rounded-lg"></div>
             </div>
             <div className="flex items-center gap-2">
-              <h4 className="mt-3 text-[20px] font-medium">56k</h4>
+              <h4 className="mt-3 text-[20px] font-medium">
+                {isInView ? (
+                  <NumberCount
+                    resetValue={!isInView}
+                    value={56}
+                    initialValue={14}
+                    duration={2000}
+                  />
+                ) : (
+                  "56"
+                )}
+                k
+              </h4>
               <span className="text-[#6ED19C] text-[8px]">+14%</span>
             </div>
           </div>
@@ -47,7 +66,20 @@ export const FastEasy = () => {
           <p className="text-[11px] mb-2">Visit statistics</p>
           <div className="w-28 min-h-14 p-2 bg-[#FE4A23] rounded-xl absolute right-4 bottom-4 text-white">
             <p className="text-[10px]">Rate</p>
-            <h4 className="text-[20px] mt-2">+58%</h4>
+            <h4 className="text-[20px] mt-2">
+              +
+              {isInView ? (
+                <NumberCount
+                  resetValue={!isInView}
+                  value={58}
+                  initialValue={14}
+                  duration={2000}
+                />
+              ) : (
+                "58"
+              )}
+              %
+            </h4>
           </div>
           <img
             src="/icons/section-five-icon-5.png"
