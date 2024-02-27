@@ -11,8 +11,20 @@ export const SectionThree = () => {
       </h2>
       <div className="mt-10 flex justify-between">
         <div className="flex">
-          <div className="h-40 w-40 bg-[#F2F2F2] z-10 rounded-full"></div>
-          <div className="h-40 w-40 bg-[#FFD027] ml-[-40px] z-0 rounded-full"></div>
+          <div className="h-40 w-40 bg-[#F2F2F2] z-10 rounded-full flex items-center">
+            <img
+              src="/icons/section-three-icon-1.png"
+              className="h-auto w-20 mx-auto"
+            />
+          </div>
+          <div className="h-40 w-40 bg-[#FFD027] ml-[-30px] z-0 rounded-full flex flex-col justify-center items-center">
+            <h3 className="text-[24px] font-bold">45%</h3>
+            <p className="text-[10px] text-center">
+              System grow
+              <br />
+              faster
+            </p>
+          </div>
         </div>
         <div className="h-40 w-[460px] bg-[#FFD027] rounded-[80px] overflow-hidden flex items-center">
           <h4 className="text-nowrap text-[120px]">
@@ -22,7 +34,7 @@ export const SectionThree = () => {
       </div>
       <div className="w-full h-[2px] bg-[#F2F2F2] my-20"></div>
       <div className="flex justify-between items-center">
-        <p className="max-w-[650px]">
+        <p className="max-w-[650px] text-[13px]">
           Explore traffic sources, page behavior, conversions and more to gain
           deep insight into your audience. With us, your business doesn't just
           adopt - it evolves

@@ -3,7 +3,10 @@ export const WidgetControl = () => {
     <div className="col-span-2 rounded-3xl bg-[#0D0D0D] pt-10 px-5  flex flex-col items-center">
       <div className="grid grid-cols-2 justify-center gap-2 w-full max-w-[300px]">
         <div className="shadow shadow-[#a5a5a57a] text-white rounded-3xl p-3 w-full">
-          <div className="bg-"></div>
+          <img
+            src="/icons/section-two-icon-1.png"
+            className="h-full w-auto mx-auto"
+          />
         </div>
         <div className="shadow shadow-[#a5a5a57a] text-white rounded-3xl p-3 w-full">
           <p className="mb-3 text-[10px]">Transactions</p>

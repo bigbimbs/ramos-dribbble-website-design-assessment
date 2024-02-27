@@ -5,7 +5,12 @@ export const ImprovedCustomerService = () => {
         <div className="shadow-md z-0 py-8 px-3 h-fit text-center flex flex-col justify-center items-center rounded-2xl">
           <p className="text-[10px]">Conversion rate</p>
           <div className="bg-[#FFD028] relative w-fit px-4 py-2 rounded-2xl mt-4">
-            <div className="absolute w-5 h-5 top-[-5px] left-[-5px] bg-[#CCCCCC] rounded-full"></div>
+            <div className="absolute w-5 h-5 top-[-5px] left-[-5px] bg-[#CCCCCC] rounded-full  flex items-center">
+              <img
+                src="/icons/section-five-icon-1.png"
+                className="h-[13px] w-auto mx-auto rounded-full"
+              />
+            </div>
             <h3 className="text-[24px]">2,3%</h3>
           </div>
           <p className="text-[10px] text-[#CCCCCC] mt-4">
@@ -16,7 +21,10 @@ export const ImprovedCustomerService = () => {
         </div>
         <div className="shadow-2xl z-10 bg-white py-2 mt-10 ml-[-40px] px-8 text-center flex flex-col justify-center items-center rounded-2xl">
           <p className="text-[10px] text-[#CCCCCC] mt-4">Sales revenue</p>
-          <h3 className="text-[20px] mt-1 mb-3">$ 131,2K</h3>
+
+          <h3 className="text-[20px] text-start mt-1 mb-3">
+            <span className="text-[16px] me-1">$</span>131,2K
+          </h3>
           <div className="grid grid-cols-3 gap-[1px] w-full mb-3">
             <div className="w-full h-[3px] rounded-lg bg-[#38C379]"></div>
             <div className="w-full h-[3px] rounded-lg bg-[#FFD028]"></div>

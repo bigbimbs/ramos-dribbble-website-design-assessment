@@ -25,12 +25,18 @@ export const HeroSection = () => {
             <div className="h-10 w-10 rounded-full bg-[#FE4A23] absolute top-[-16px] left-[-16px] flex justify-center items-center">
               <img src="/icons/hero-icon-3.png" className="h-3" />
             </div>
+            <img
+              src="/icons/hero-icon-5.png"
+              className="h-full w-auto rounded-xl"
+            />
           </div>
         </div>
       </div>
       <div className="flex justify-end items-center gap-2 mt-[-20px]">
         <h2 className="text-[80px]">Shape</h2>
-        <div className="w-20 h-20 bg-[#FFD027] rounded-full"></div>
+        <div className="w-20 h-20 bg-[#FFD027] rounded-full flex justify-center items-center">
+          <img src="/icons/hero-icon-4.png" className="h-8 ml-[-3px]" />
+        </div>
         <h2 className="text-[80px]">the</h2>
         <h2 className="text-[80px]">future</h2>
       </div>

@@ -3,7 +3,12 @@ import { Button } from "@/components/Elements/Button";
 export const SectionSix = () => {
   return (
     <div className="flex flex-col items-center py-[100px]">
-      <div className="w-[100px] h-[100px] rounded-2xl shadow-2xl shadow-[#FE4A23]  bg-[#FE4A23]"></div>
+      <div className="w-[100px] h-[100px] rounded-[24px] shadow-2xl shadow-[#FE4A23] bg-[#FE4A23] flex items-center">
+        <img
+          src="/icons/section-six-icon-1.png"
+          className="h-10 w-auto mx-auto"
+        />
+      </div>
       <h2 className="mt-5 text-[100px] word-spacing-thinner">Get Started</h2>
       <p className="max-w-[400px] mt-3 text-center text-[#CCCCCC]">
         Turn information into advantage! Start using Ramos today. Sign up for a

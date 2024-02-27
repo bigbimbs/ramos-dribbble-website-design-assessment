@@ -1,8 +1,8 @@
 export const SectionFour = () => {
   const subSections = ["Instant Insights", "Ai technology", "Easy integration"];
   return (
-    <div className="bg-[#F9F9F9] rounded-s-[80px] pt-[80px] mx-1 px-[80px],relative">
-      <div className="absolute left-20">
+    <div className="bg-[#F9F9F9] rounded-s-[80px]  mx-1 px-[80px],relative">
+      <div className="absolute left-20 pt-[90px]">
         <h2 className="text-[36px] max-w-[500px]">
           Turning data into real actions and ideas
         </h2>

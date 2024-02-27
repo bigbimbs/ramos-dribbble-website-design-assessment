@@ -5,23 +5,27 @@ export const Footer = () => {
     <footer className="bg-[#0D0D0D] px-20 pb-10 pt-[100px]">
       <div className="flex justify-between items-center">
         <div className="flex justify-between items-center gap-10 text-[13px]">
-          <Button.Link to={"#"} className="text-[#666666]" variant="text">
+          <Button.Link to={"#"} className="!text-[#666666]" variant="text">
             About
           </Button.Link>
-          <Button.Link to={"#"} className="text-[#666666]" variant="text">
+          <Button.Link to={"#"} className="!text-[#666666]" variant="text">
             Why Us
           </Button.Link>
-          <Button.Link to={"#"} className="text-[#666666]" variant="text">
+          <Button.Link to={"#"} className="!text-[#666666]" variant="text">
             Platform
           </Button.Link>
-          <Button.Link to={"#"} className="text-[#666666]" variant="text">
+          <Button.Link to={"#"} className="!text-[#666666]" variant="text">
             Pricing
           </Button.Link>
-          <Button.Link to={"#"} className="text-[#666666]" variant="text">
+          <Button.Link to={"#"} className="!text-[#666666]" variant="text">
             Contacts
           </Button.Link>
         </div>
-        <Button.Link to={"#"} className="text-[48px] text-white" variant="text">
+        <Button.Link
+          to={"#"}
+          className="!text-[48px] text-white"
+          variant="text"
+        >
           hello@ramos.com
         </Button.Link>
       </div>
@@ -65,10 +69,10 @@ export const Footer = () => {
           </div>
         </div>
         <div className="flex justify-between">
-          <Button.Link to={"#"} className="text-[#666666] mt-5" variant="text">
+          <Button.Link to={"#"} className="!text-[#666666] mt-5" variant="text">
             Privacy policy
           </Button.Link>
-          <Button.Link to={"#"} className="text-[#666666] mt-5" variant="text">
+          <Button.Link to={"#"} className="!text-[#666666] mt-5" variant="text">
             License agreement
           </Button.Link>
           <img src="/images/barcode.png" className="h-full w-auto" />
