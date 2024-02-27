@@ -28,7 +28,7 @@ export const Header = () => {
         ref={firstAnimationRef}
         variants={firstAnimationVariant}
         animate={firstAnimationControl}
-        className="flex items-center justify-between"
+        className="flex items-center justify-between h-full"
       >
         <div className="flex items-center gap-1 pl-4">
           <img src="/icons/logo.png" className="h-3" />
@@ -76,7 +76,7 @@ export const Header = () => {
             Settings
           </Button.Link>
         </div>
-        <div className="py-1">
+        <div className="">
           <Button className="!rounded-xl !bg-white text-black !text-[13px] py-3">
             <span className="text-black px-3 opacity-80">Sign Up</span>
           </Button>
