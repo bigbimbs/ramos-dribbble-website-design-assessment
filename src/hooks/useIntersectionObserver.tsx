@@ -14,7 +14,7 @@ export function useIntersectionObserver<RefType>(): [
       entries.forEach((entry) => {
         entry.isIntersecting && setVisible(true);
 
-        // No need to keep observing:
+        // // No need to keep observing:
         observer.unobserve(ref.current as Element);
       });
     });

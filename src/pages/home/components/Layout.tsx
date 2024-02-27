@@ -1,6 +1,8 @@
 import { Section } from "@/components/Elements";
 import { Head } from "@/components/Head";
 import { ReactNode } from "react";
+import { Header } from "./Header";
+import { Footer } from "./Footer";
 
 type LayoutProps = {
   children?: ReactNode;
@@ -16,7 +18,9 @@ export const HomePageLayout = ({
   return (
     <>
       <Head title={title} description={description} />
-      <Section className="bg-white">{children}</Section>
+      <Header />
+      <Section className="bg-white ">{children}</Section>
+      <Footer />
     </>
   );
 };
